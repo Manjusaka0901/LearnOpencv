@@ -166,11 +166,11 @@ int mainmask(int argc, char * argv[])
 //设置ROI感兴趣区域
 int mainroi(int argc, char * argv[])
 {
-	Mat imgSrc = imread("src.png");  //加载图片
+	Mat imgSrc = imread("1_0.png");  //加载图片
 	Mat imgLogo = imread("logo.png");
 	Mat imageROI;
-	imageROI = imgSrc(Rect(800, 350, imgLogo.cols, imgLogo.rows));  //指定imgSrc感兴趣区域，在imageROI上修改图像就相当于修改原图上的该区域
-	addWeighted(imageROI, 0.9, imgLogo, 0.1, 0, imageROI);  //添加加权（融合）αβγ
+	imageROI = imgSrc(Rect(75, 172, 314, 388));  //指定imgSrc感兴趣区域，在imageROI上修改图像就相当于修改原图上的该区域
+//	addWeighted(imageROI, 0.9, imgLogo, 0.1, 0, imageROI);  //添加加权（融合）αβγ
 	namedWindow("src与logo融合");
 	imshow("src与logo融合", imgSrc);
 	waitKey();      //展示图片（show和waitKey配套使用）

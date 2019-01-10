@@ -24,5 +24,16 @@
     <ClCompile Include="backImg.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="shootImg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageProc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\纹理循环\图片压缩\CVHeader.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
